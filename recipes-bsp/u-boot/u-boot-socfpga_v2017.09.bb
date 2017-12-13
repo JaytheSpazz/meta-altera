@@ -12,3 +12,4 @@ SRC_URI_append = "\
 	"
 
 DEPENDS += "dtc-native bc-native u-boot-mkimage-native"
+DEPENDS += "u-boot-mkimage-native"
