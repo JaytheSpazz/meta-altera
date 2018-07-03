@@ -19,7 +19,7 @@ UBOOT_LOADADDRESS = "0x80008000"
 SERIAL_CONSOLE = "115200 ttyS0"
 
 KERNEL_IMAGETYPE = "zImage"
-MACHINE_EXTRA_RRECOMMENDS = " kernel-modules"
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = " kernel-modules"
 MACHINE_FEATURES = "kernel26"
 
 # file system images required
