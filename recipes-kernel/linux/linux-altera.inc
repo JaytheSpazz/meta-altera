@@ -27,7 +27,7 @@ SRC_URI = "${KERNEL_REPO};protocol=${KERNEL_PROT};branch=${KBRANCH}"
 # Default kernel devicetrees
 KERNEL_DEVICETREE_cyclone5 ?= "socfpga_cyclone5_socdk.dtb socfpga_cyclone5_sockit.dtb socfpga_cyclone5_socrates.dtb socfpga_cyclone5_de0_sockit.dtb"
 KERNEL_DEVICETREE_arria5 ?= "socfpga_arria5_socdk.dtb"
-KERNEL_DEVICETREE_arria10 ?= "socfpga_arria10_socdk_sdmmc.dtb socfpga_arria10_socdk_qspi.dtb socfpga_arria10_swvp.dtb"
+KERNEL_DEVICETREE_arria10 ?= "socfpga_arria10_socdk_sdmmc.dtb socfpga_arria10_socdk_qspi.dtb socfpga_arria10_socdk_nand.dtb"
 KERNEL_DEVICETREE_stratix10swvp ?= "altera/stratix10_swvp.dtb"
 KERNEL_DEVICETREE_stratix10 ?= "altera/stratix10_socdk.dtb"
 KERNEL_DEVICETREE_10m50 ?= "10m50_devboard.dtb"
