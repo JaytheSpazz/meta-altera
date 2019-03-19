@@ -10,7 +10,7 @@ KERNEL_PROT ?= "https"
 LINUX_VERSION_EXTENSION ?= "-altera"
 
 # Build branch name
-LINUX_VERSION_PREFIX ?= "socfpga-"
+LINUX_VERSION_PREFIX ?= "socfpga_fm6_emulator_v6"
 LINUX_VERSION_SUFFIX ?= ""
 LINUX_VERSION ?= "4.0"
 
@@ -30,6 +30,7 @@ KERNEL_DEVICETREE_arria5 ?= "socfpga_arria5_socdk.dtb"
 KERNEL_DEVICETREE_arria10 ?= "socfpga_arria10_socdk_sdmmc.dtb socfpga_arria10_socdk_qspi.dtb socfpga_arria10_socdk_nand.dtb"
 KERNEL_DEVICETREE_stratix10swvp ?= "altera/stratix10_swvp.dtb"
 KERNEL_DEVICETREE_stratix10 ?= "altera/stratix10_socdk.dtb"
+KERNEL_DEVICETREE_fm6 ?= "socfpga_fm6_emu.dtb"
 KERNEL_DEVICETREE_10m50 ?= "10m50_devboard.dtb"
 
 require recipes-kernel/linux/linux-yocto.inc
