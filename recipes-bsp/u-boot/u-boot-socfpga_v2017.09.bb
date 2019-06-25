@@ -1,15 +1,18 @@
 require u-boot-socfpga-common.inc
-require u-boot-socfpga-env.inc
 require ${COREBASE}/meta/recipes-bsp/u-boot/u-boot.inc
 
 FILESEXTRAPATHS =. "${THISDIR}/files/v2017.09:"
 
-SRCREV = "17db5346b50262fb7f5aadc92de92c6a43d30226"
-SRC_URI = "git://github.com/altera-opensource/u-boot-socfpga.git;branch=socfpga_v2017.09;prot=https"
+LICENSE = "GPLv2+"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
+
+SRCREV = "c98ac3487e413c71e5d36322ef3324b21c6f60f9"
+
+# Stratix10 is not mainlined yet
+SRCREV_stratix10 = "53ce6e587a478bf613b1af42b49b5beba2dd2f3a"
+SRC_URI_stratix10 = "git://github.com/altera-opensource/u-boot-socfpga.git;branch=socfpga_v2017.09;prot=https"
 
 SRC_URI_append = "\
-	file://cyclone5-socdk.env \
 	"
 
 DEPENDS += "dtc-native bc-native u-boot-mkimage-native"
-DEPENDS += "u-boot-mkimage-native"
