@@ -48,6 +48,6 @@ For Angstrom:
 
 
 
-Send pull requests, patches, comments or questions to raj.khem@gmail.com
+Send pull requests, patches, comments or questions to raj.khem@gmail.com hean.loong.ong@intel.com
 
-Maintainer(s): Khem Raj <raj.khem@gmail.com>
+Maintainer(s): Khem Raj <raj.khem@gmail.com> Ong Hean Loong <hean.loong.ong@intel.com>>
