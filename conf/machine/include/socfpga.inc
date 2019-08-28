@@ -18,8 +18,10 @@ UBOOT_ENTRYPOINT = "0x80008000"
 UBOOT_LOADADDRESS = "0x80008000"
 
 KERNEL_IMAGETYPE ?= "zImage"
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += " kernel-modules"
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "kernel-modules"
 MACHINE_FEATURES = "kernel26"
+
+KERNEL_MODULE_AUTOLOAD += "kernel-modules"
 
 # file system images required
 IMAGE_FSTYPES ?= "cpio ext3 tar.gz jffs2"
