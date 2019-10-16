@@ -15,5 +15,5 @@ UBOOT_SUFFIX = "img"
 UBOOT_BINARY = "u-boot.img"
 UBOOT_IMAGE = "u-boot-${MACHINE}-${PV}-${PR}.${UBOOT_SUFFIX}"
 
-IMAGE_FSTYPES ?= "cpio ext3 tar.gz"
+IMAGE_FSTYPES ?= "cpio ext3 tar.gz jffs2"
 do_image_wic[depends] += "mtools-native:do_populate_sysroot dosfstools-native:do_populate_sysroot virtual/bootloader:do_deploy virtual/kernel:do_deploy"
