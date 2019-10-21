@@ -1,6 +1,6 @@
 LINUX_VERSION = "5.2"
 
-SRCREV = "c0005ba9787a844b4e73566aa3af6a1307508635"
+SRCREV = "0f49cb9356f0f0dd658fe0a92920e1029716bfec"
 
 include linux-altera.inc
 
